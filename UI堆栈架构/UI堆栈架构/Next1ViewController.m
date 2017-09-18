@@ -7,6 +7,7 @@
 //
 
 #import "Next1ViewController.h"
+#import "SecondViewController.h"
 
 @interface Next1ViewController ()
 
@@ -31,11 +32,6 @@
 {
     [self.navigationController popViewControllerAnimated:YES];
 }
-
-//- (void)setNavigationBarHide:(BOOL)hide withAanimated:(BOOL)animated
-//{
-//    [self.navigationController setNavigationBarHidden:YES animated:animated];
-//}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

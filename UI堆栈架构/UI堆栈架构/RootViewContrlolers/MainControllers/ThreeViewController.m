@@ -61,6 +61,7 @@
 {
     self.tabBarController.title = @"Three";
     self.tabBarController.navigationItem.rightBarButtonItem = nil;
+    [self.navigationController setNavigationBarHidden:NO];
 }
 
 - (void)didReceiveMemoryWarning {

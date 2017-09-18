@@ -25,6 +25,7 @@
     self.tabBarController.title = @"Four";
     UIBarButtonItem *rightItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFastForward target:self action:@selector(nextAction:)];
     self.tabBarController.navigationItem.rightBarButtonItem = rightItem;
+    [self.navigationController setNavigationBarHidden:NO];
 }
 
 - (void)nextAction:(id)sender

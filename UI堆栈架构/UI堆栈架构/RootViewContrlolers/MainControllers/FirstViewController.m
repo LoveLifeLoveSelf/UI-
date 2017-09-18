@@ -24,6 +24,7 @@
 {
     self.tabBarController.title = @"First";
     self.tabBarController.navigationItem.rightBarButtonItem = nil;
+    [self.navigationController setNavigationBarHidden:NO];
 }
 
 - (void)didReceiveMemoryWarning {

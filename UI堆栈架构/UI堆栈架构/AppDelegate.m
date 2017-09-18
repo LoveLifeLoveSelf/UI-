@@ -46,6 +46,9 @@
     fourVC.tabBarItem = item;
     
     [tabBarController setViewControllers:@[firstVC,secondVC,threeVC,fourVC] animated:YES];
+    
+    [tabBarController setSelectedIndex:1];
+    
     self.mainNavigation = [[GlobleNavigationController alloc] initWithRootViewController:tabBarController];
     self.window.rootViewController = self.mainNavigation;
     [self.window makeKeyAndVisible];
@@ -59,6 +62,7 @@
 }
 - (BOOL)tabBarController:(UITabBarController *)tabBarController shouldSelectViewController:(UIViewController *)viewController
 {
+    if (viewController == tabBarController.selectedViewController) {return NO;}
     BaseViewController *vc = (BaseViewController *)viewController;
     [vc setNavigationItemWithSubviews];
     return YES;
