@@ -18,6 +18,11 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.view.backgroundColor = [UIColor greenColor];
+    
+    UIImageView *imageV = [[UIImageView alloc] init];
+    imageV.frame = CGRectMake(0, 0, SCREENWIDTH, SCREENHEIGH - 64 - 49);
+    imageV.image = [UIImage getBundleImage:@"屏幕快照.png" isCache:NO];
+    [self.view addSubview:imageV];
 }
 
 - (void)setNavigationItemWithSubviews
@@ -30,6 +35,7 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+    self.view = nil;
 }
 
 /*
