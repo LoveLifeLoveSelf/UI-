@@ -8,9 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-#define SCREENWIDTH   [UIScreen mainScreen].bounds.size.width
-#define SCREENHEIGH   [UIScreen mainScreen].bounds.size.height
-
 @interface BaseViewController : UIViewController
 
 - (void)setNavigationBarHide:(BOOL)hide withAanimated:(BOOL)animated;

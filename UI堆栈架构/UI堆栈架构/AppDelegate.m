@@ -55,8 +55,13 @@
 
 - (void)tabBarController:(UITabBarController *)tabBarController didSelectViewController:(UIViewController *)viewController
 {
+    
+}
+- (BOOL)tabBarController:(UITabBarController *)tabBarController shouldSelectViewController:(UIViewController *)viewController
+{
     BaseViewController *vc = (BaseViewController *)viewController;
     [vc setNavigationItemWithSubviews];
+    return YES;
 }
 
 

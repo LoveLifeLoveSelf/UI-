@@ -19,7 +19,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.view.backgroundColor = [UIColor yellowColor];
-    [self.navigationController setNavigationBarHidden:YES];//值得注意viewdidLaod方法会对self.view及其superView进行布局。（比如设置frame）儿loadView方法而是对nib文件进行加载以及self.view（包含其suerview）的初始化
+    //值得注意viewdidLaod方法会对self.view及其superView进行布局。（比如设置frame）儿loadView方法而是对nib文件进行加载以及self.view（包含其suerview）的初始化
     UIButton *next = [UIButton buttonWithType:UIButtonTypeCustom];
     next.frame = CGRectMake(0, 0, 100, 100);
     [next setTitle:@"next" forState:UIControlStateNormal];
@@ -39,6 +39,7 @@
 {
     self.tabBarController.title = @"Second";
     self.tabBarController.navigationItem.rightBarButtonItem = nil;
+    [self.navigationController setNavigationBarHidden:YES];
 }
 
 - (void)setNavigationBarHide:(BOOL)hide withAanimated:(BOOL)animated
