@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		78DAC7B2A1D0DEB77C38F9EE /* libPods-UI堆栈架构.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 563D1F3AB91E0604923E2E91 /* libPods-UI堆栈架构.a */; };
-		78ECC69598E52546B2488632 /* libPods-UI堆栈架构Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FC8F8890032EB3AA22975D80 /* libPods-UI堆栈架构Tests.a */; };
-		8E4BEC76B75A7664BF308212 /* libPods-UI堆栈架构UITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C7182103FF89717823DBADAC /* libPods-UI堆栈架构UITests.a */; };
 		FC169FBF1F6FA1D800D22655 /* DrLocalImageCacheManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FC169FBC1F6FA1D800D22655 /* DrLocalImageCacheManager.m */; };
 		FC169FC01F6FA1D800D22655 /* UIImage+LocalCache.m in Sources */ = {isa = PBXBuildFile; fileRef = FC169FBE1F6FA1D800D22655 /* UIImage+LocalCache.m */; };
 		FC1894F51F6D2B8A0093B00E /* 社保相片.png in Resources */ = {isa = PBXBuildFile; fileRef = FC1894F41F6D2B8A0093B00E /* 社保相片.png */; };
@@ -47,14 +45,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		2509EBBAA130F47B0D58E261 /* Pods-UI堆栈架构UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UI堆栈架构UITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UI堆栈架构UITests/Pods-UI堆栈架构UITests.debug.xcconfig"; sourceTree = "<group>"; };
 		563D1F3AB91E0604923E2E91 /* libPods-UI堆栈架构.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-UI堆栈架构.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		8C123125ABB6C4C7D8A6D771 /* Pods-UI堆栈架构Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UI堆栈架构Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-UI堆栈架构Tests/Pods-UI堆栈架构Tests.release.xcconfig"; sourceTree = "<group>"; };
 		94528F067C46F8F362EC30A9 /* Pods-UI堆栈架构.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UI堆栈架构.release.xcconfig"; path = "Pods/Target Support Files/Pods-UI堆栈架构/Pods-UI堆栈架构.release.xcconfig"; sourceTree = "<group>"; };
-		A547B49A274AC5669B0CA106 /* Pods-UI堆栈架构Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UI堆栈架构Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UI堆栈架构Tests/Pods-UI堆栈架构Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		C7182103FF89717823DBADAC /* libPods-UI堆栈架构UITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-UI堆栈架构UITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD23C571EBADA556D0E02721 /* Pods-UI堆栈架构.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UI堆栈架构.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UI堆栈架构/Pods-UI堆栈架构.debug.xcconfig"; sourceTree = "<group>"; };
-		D147C0773DC9B096220EF58F /* Pods-UI堆栈架构UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UI堆栈架构UITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-UI堆栈架构UITests/Pods-UI堆栈架构UITests.release.xcconfig"; sourceTree = "<group>"; };
 		FC169FBB1F6FA1D800D22655 /* DrLocalImageCacheManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrLocalImageCacheManager.h; sourceTree = "<group>"; };
 		FC169FBC1F6FA1D800D22655 /* DrLocalImageCacheManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrLocalImageCacheManager.m; sourceTree = "<group>"; };
 		FC169FBD1F6FA1D800D22655 /* UIImage+LocalCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+LocalCache.h"; sourceTree = "<group>"; };
@@ -107,7 +101,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				78ECC69598E52546B2488632 /* libPods-UI堆栈架构Tests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -115,7 +108,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8E4BEC76B75A7664BF308212 /* libPods-UI堆栈架构UITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,10 +129,6 @@
 			children = (
 				CD23C571EBADA556D0E02721 /* Pods-UI堆栈架构.debug.xcconfig */,
 				94528F067C46F8F362EC30A9 /* Pods-UI堆栈架构.release.xcconfig */,
-				A547B49A274AC5669B0CA106 /* Pods-UI堆栈架构Tests.debug.xcconfig */,
-				8C123125ABB6C4C7D8A6D771 /* Pods-UI堆栈架构Tests.release.xcconfig */,
-				2509EBBAA130F47B0D58E261 /* Pods-UI堆栈架构UITests.debug.xcconfig */,
-				D147C0773DC9B096220EF58F /* Pods-UI堆栈架构UITests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -296,12 +284,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FC2E45331F6D1A3D0057B482 /* Build configuration list for PBXNativeTarget "UI堆栈架构Tests" */;
 			buildPhases = (
-				2E174674B7B3938AC98FE057 /* [CP] Check Pods Manifest.lock */,
 				FC2E45181F6D1A3D0057B482 /* Sources */,
 				FC2E45191F6D1A3D0057B482 /* Frameworks */,
 				FC2E451A1F6D1A3D0057B482 /* Resources */,
-				AF2D4748B7EE8DAB011B4BC5 /* [CP] Embed Pods Frameworks */,
-				4BC233C7C2915823EB75A9D7 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -317,12 +302,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FC2E45361F6D1A3D0057B482 /* Build configuration list for PBXNativeTarget "UI堆栈架构UITests" */;
 			buildPhases = (
-				96D83311C256195445537764 /* [CP] Check Pods Manifest.lock */,
 				FC2E45231F6D1A3D0057B482 /* Sources */,
 				FC2E45241F6D1A3D0057B482 /* Frameworks */,
 				FC2E45251F6D1A3D0057B482 /* Resources */,
-				2AF982611425EC350AAC697C /* [CP] Embed Pods Frameworks */,
-				2E92D0C42E5BD0E25A720EF7 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -407,69 +389,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		2AF982611425EC350AAC697C /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-UI堆栈架构UITests/Pods-UI堆栈架构UITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		2E174674B7B3938AC98FE057 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-UI堆栈架构Tests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		2E92D0C42E5BD0E25A720EF7 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-UI堆栈架构UITests/Pods-UI堆栈架构UITests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		4BC233C7C2915823EB75A9D7 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-UI堆栈架构Tests/Pods-UI堆栈架构Tests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		5646B5C230CCBBECF245C286 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -483,39 +402,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-UI堆栈架构/Pods-UI堆栈架构-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		96D83311C256195445537764 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-UI堆栈架构UITests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		AF2D4748B7EE8DAB011B4BC5 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-UI堆栈架构Tests/Pods-UI堆栈架构Tests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		C027B448F064220D67C9F92F /* [CP] Embed Pods Frameworks */ = {
@@ -727,7 +613,6 @@
 		};
 		FC2E45341F6D1A3D0057B482 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A547B49A274AC5669B0CA106 /* Pods-UI堆栈架构Tests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = "UI堆栈架构Tests/Info.plist";
@@ -740,7 +625,6 @@
 		};
 		FC2E45351F6D1A3D0057B482 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8C123125ABB6C4C7D8A6D771 /* Pods-UI堆栈架构Tests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = "UI堆栈架构Tests/Info.plist";
@@ -753,7 +637,6 @@
 		};
 		FC2E45371F6D1A3D0057B482 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2509EBBAA130F47B0D58E261 /* Pods-UI堆栈架构UITests.debug.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = "UI堆栈架构UITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -765,7 +648,6 @@
 		};
 		FC2E45381F6D1A3D0057B482 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D147C0773DC9B096220EF58F /* Pods-UI堆栈架构UITests.release.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = "UI堆栈架构UITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";

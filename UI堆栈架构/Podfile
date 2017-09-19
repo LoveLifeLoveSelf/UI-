@@ -4,15 +4,4 @@
 target 'UI堆栈架构' do
   pod 'AFNetworking', '~> 3.0'
   pod 'SDWebImage', '~> 4.0'
-
-  target 'UI堆栈架构Tests' do
-    inherit! :search_paths
-    # Pods for testing
-  end
-
-  target 'UI堆栈架构UITests' do
-    inherit! :search_paths
-    # Pods for testing
-  end
-
 end
