@@ -59,7 +59,7 @@
 - (void)tabBarController:(UITabBarController *)tabBarController didSelectViewController:(UIViewController *)viewController
 {
     for (UIViewController *vc in tabBarController.viewControllers) {
-        if (vc != viewController) {
+        if (vc != viewController && vc.view) {
             [vc didReceiveMemoryWarning];
         }
     }

@@ -14,6 +14,11 @@
 
 @implementation BaseViewController
 
+- (void)dealloc
+{
+    NSLog(@"%s",__func__);
+}
+
 
 
 - (void)viewDidLoad {
