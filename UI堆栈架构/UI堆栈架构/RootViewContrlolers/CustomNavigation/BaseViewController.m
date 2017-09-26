@@ -16,7 +16,9 @@
 
 - (void)dealloc
 {
-    NSLog(@"%s",__func__);
+    NSLog(@"释放类 %@", NSStringFromClass([self class]));
+    NSLog(@"释放类 %@", NSStringFromClass([super class]));
+    NSLog(@"释放类 %@", NSStringFromClass([self superclass]));
 }
 
 

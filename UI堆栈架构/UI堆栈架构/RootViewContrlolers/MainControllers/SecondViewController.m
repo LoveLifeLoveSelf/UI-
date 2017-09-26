@@ -25,6 +25,7 @@
     [next setTitle:@"next" forState:UIControlStateNormal];
     [next setBackgroundColor:[UIColor whiteColor]];
     [next setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    [next addTarget:self action:@selector(nextAction1:) forControlEvents:UIControlEventTouchUpInside];
     [next addTarget:self action:@selector(nextAction:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:next];
 }
@@ -33,6 +34,14 @@
 {
     Next1ViewController *next1 = [[Next1ViewController alloc] init];
     [self.navigationController pushViewController:next1 animated:YES];
+    NSLog(@"nextAction");
+}
+
+- (void)nextAction1:(UIButton *)btn
+{
+    for (int i = 0; i < 10; i++) {
+    }
+    NSLog(@"nextAction1");
 }
 
 - (void)setNavigationItemWithSubviews
