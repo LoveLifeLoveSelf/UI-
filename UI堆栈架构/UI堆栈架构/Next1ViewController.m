@@ -18,7 +18,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    
+    UIImageView *imageV = [[UIImageView alloc] init];
+    imageV.frame = CGRectMake(0, 0, SCREENWIDTH, SCREENHEIGH - 64 - 49);
+    imageV.image = [UIImage getBundleImage:@"屏幕快照.png" isCache:NO];
+    [self.view addSubview:imageV];
+
     UIButton *next = [UIButton buttonWithType:UIButtonTypeCustom];
     next.frame = CGRectMake(0, 0, 100, 100);
     [next setTitle:@"next" forState:UIControlStateNormal];
@@ -30,7 +34,8 @@
 
 - (void)nextAction:(UIButton *)btn
 {
-    [self.navigationController popViewControllerAnimated:YES];
+    [[NSNotificationCenter defaultCenter] postNotificationName:DEALLOC_SUBVIEWS object:self];
+//    [self.navigationController popViewControllerAnimated:YES];
 }
 
 - (void)didReceiveMemoryWarning {

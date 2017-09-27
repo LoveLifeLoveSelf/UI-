@@ -19,6 +19,7 @@
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         NSLog(@"%@ == 初始化vc",NSStringFromClass([super class]));
+        self.isDeallocSubviews = YES;
     }
     return self;
 }
@@ -35,6 +36,8 @@
     self.view.backgroundColor = [UIColor whiteColor];
     self.edgesForExtendedLayout = UIRectEdgeLeft | UIRectEdgeRight;
 //    self.automaticallyAdjustsScrollViewInsets = NO;
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(deallocSubViews:) name:DEALLOC_SUBVIEWS object:nil];
 }
 
 - (void)setNavigationItemWithSubviews
@@ -56,6 +59,19 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)deallocSubViews:(NSNotification *)noti
+{
+    if (self.isDeallocSubviews && noti.object != self) {
+        [self didReceiveMemoryWarning];
+    }
+}
+
+- (void)dealloc
+{
+    NSLog(@"%@ --- dealloc",NSStringFromClass([self class]));
+    [[NSNotificationCenter defaultCenter] removeObserver:self name:DEALLOC_SUBVIEWS object:nil];
 }
 
 /*

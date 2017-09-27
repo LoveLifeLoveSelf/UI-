@@ -58,11 +58,7 @@
 
 - (void)tabBarController:(UITabBarController *)tabBarController didSelectViewController:(UIViewController *)viewController
 {
-    for (UIViewController *vc in tabBarController.viewControllers) {
-        if (vc != viewController) {
-            [vc didReceiveMemoryWarning];
-        }
-    }
+    [[NSNotificationCenter defaultCenter] postNotificationName:DEALLOC_SUBVIEWS object:viewController];
 }
 - (BOOL)tabBarController:(UITabBarController *)tabBarController shouldSelectViewController:(UIViewController *)viewController
 {
