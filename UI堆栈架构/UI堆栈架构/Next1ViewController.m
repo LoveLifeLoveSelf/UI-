@@ -28,11 +28,20 @@
     [next setTitle:@"next" forState:UIControlStateNormal];
     [next setBackgroundColor:[UIColor whiteColor]];
     [next setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-    [next addTarget:self action:@selector(nextAction:) forControlEvents:UIControlEventTouchUpInside];
+    [next addTarget:self action:@selector(clearAction:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:next];
+    
+    UIBarButtonItem *rightItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFastForward target:self action:@selector(nextAction:)];
+    self.navigationItem.rightBarButtonItem = rightItem;
 }
 
-- (void)nextAction:(UIButton *)btn
+- (void)nextAction:(id)sender
+{
+    Next1ViewController *next1 = [[Next1ViewController alloc] init];
+    [self.navigationController pushViewController:next1 animated:YES];
+}
+
+- (void)clearAction:(UIButton *)btn
 {
     [[NSNotificationCenter defaultCenter] postNotificationName:DEALLOC_SUBVIEWS object:self];
 //    [self.navigationController popViewControllerAnimated:YES];

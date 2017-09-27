@@ -19,11 +19,23 @@
     // Do any additional setup after loading the view.
     self.title = @"next";
     self.view.backgroundColor = [UIColor yellowColor];
+    UIButton *next = [UIButton buttonWithType:UIButtonTypeCustom];
+    next.frame = CGRectMake(0, 0, 100, 100);
+    [next setTitle:@"next" forState:UIControlStateNormal];
+    [next setBackgroundColor:[UIColor whiteColor]];
+    [next setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    [next addTarget:self action:@selector(nextAction:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:next];
 }
 
 - (void)setNavigationBarHide:(BOOL)hide withAanimated:(BOOL)animated
 {
     [self.navigationController setNavigationBarHidden:YES animated:animated];
+}
+- (void)nextAction:(UIButton *)btn
+{
+//    [[NSNotificationCenter defaultCenter] postNotificationName:DEALLOC_SUBVIEWS object:self];
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 - (void)didReceiveMemoryWarning {
