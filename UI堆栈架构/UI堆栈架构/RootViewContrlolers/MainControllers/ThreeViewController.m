@@ -57,11 +57,11 @@
     return 100;
 }
 
-- (void)setNavigationItemWithSubviews
+- (void)setNavigationItemWithSubviewsAnimation:(BOOL)animation
 {
     self.tabBarController.title = @"Three";
     self.tabBarController.navigationItem.rightBarButtonItem = nil;
-    [self.navigationController setNavigationBarHidden:NO];
+    [self.navigationController setNavigationBarHidden:NO animated:animation];
 }
 
 - (void)didReceiveMemoryWarning {

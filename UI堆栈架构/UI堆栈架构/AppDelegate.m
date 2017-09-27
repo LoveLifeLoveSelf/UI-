@@ -64,7 +64,7 @@
 {
     if (viewController == tabBarController.selectedViewController) {return NO;}
     BaseViewController *vc = (BaseViewController *)viewController;
-    [vc setNavigationItemWithSubviews];
+    [vc setNavigationItemWithSubviewsAnimation:NO];
     return YES;
 }
 

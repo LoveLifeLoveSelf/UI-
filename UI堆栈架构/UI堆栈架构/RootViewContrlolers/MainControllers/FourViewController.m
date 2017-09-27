@@ -24,12 +24,12 @@
     [self.view addSubview:imageV];
 }
 
-- (void)setNavigationItemWithSubviews
+- (void)setNavigationItemWithSubviewsAnimation:(BOOL)animation
 {
     self.tabBarController.title = @"Four";
     UIBarButtonItem *rightItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFastForward target:self action:@selector(nextAction:)];
     self.tabBarController.navigationItem.rightBarButtonItem = rightItem;
-    [self.navigationController setNavigationBarHidden:NO];
+    [self.navigationController setNavigationBarHidden:NO animated:animation];
 }
 
 - (void)nextAction:(id)sender

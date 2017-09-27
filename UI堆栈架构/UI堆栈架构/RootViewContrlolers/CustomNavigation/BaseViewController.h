@@ -14,6 +14,6 @@
 
 - (void)setNavigationBarHide:(BOOL)hide withAanimated:(BOOL)animated;
 
-- (void)setNavigationItemWithSubviews;
+- (void)setNavigationItemWithSubviewsAnimation:(BOOL)animation;
 
 @end

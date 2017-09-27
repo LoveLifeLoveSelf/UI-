@@ -35,11 +35,11 @@
     [self.navigationController pushViewController:next1 animated:YES];
 }
 
-- (void)setNavigationItemWithSubviews
+- (void)setNavigationItemWithSubviewsAnimation:(BOOL)animation
 {
     self.tabBarController.title = @"Second";
     self.tabBarController.navigationItem.rightBarButtonItem = nil;
-    [self.navigationController setNavigationBarHidden:YES];
+    [self.navigationController setNavigationBarHidden:YES animated:animation];
 }
 
 - (void)setNavigationBarHide:(BOOL)hide withAanimated:(BOOL)animated
