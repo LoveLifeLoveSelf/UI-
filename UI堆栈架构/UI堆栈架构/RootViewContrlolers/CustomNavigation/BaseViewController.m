@@ -14,7 +14,19 @@
 
 @implementation BaseViewController
 
+- (instancetype)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+{
+    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    if (self) {
+        NSLog(@"%@ == 初始化vc",NSStringFromClass([super class]));
+    }
+    return self;
+}
 
+- (void)loadView
+{
+    [super loadView];
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
