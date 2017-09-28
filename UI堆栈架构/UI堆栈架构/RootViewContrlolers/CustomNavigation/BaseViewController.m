@@ -7,6 +7,7 @@
 //
 
 #import "BaseViewController.h"
+#import "NSObject+MemoryStorage.h"
 
 @interface BaseViewController ()
 
@@ -14,25 +15,32 @@
 
 @implementation BaseViewController
 
-- (void)dealloc
+- (instancetype)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
-    NSLog(@"释放类 %@", NSStringFromClass([self class]));
-    NSLog(@"释放类 %@", NSStringFromClass([super class]));
-    NSLog(@"释放类 %@", NSStringFromClass([self superclass]));
+    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    if (self) {
+        NSLog(@"%@ == 初始化vc",NSStringFromClass([super class]));
+        self.isDeallocSubviews = YES;
+        [self setNavigationItemWithSubviewsAnimation:YES];
+    }
+    return self;
 }
 
-
+- (void)loadView
+{
+    [super loadView];
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    [self setNavigationItemWithSubviews];
     self.view.backgroundColor = [UIColor whiteColor];
     self.edgesForExtendedLayout = UIRectEdgeLeft | UIRectEdgeRight;
 //    self.automaticallyAdjustsScrollViewInsets = NO;
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(deallocSubViews:) name:DEALLOC_SUBVIEWS object:nil];
 }
 
-- (void)setNavigationItemWithSubviews
+- (void)setNavigationItemWithSubviewsAnimation:(BOOL)animation
 {
     
 }
@@ -51,6 +59,20 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+    self.view = nil;
+}
+
+- (void)deallocSubViews:(NSNotification *)noti
+{
+    if (self.isDeallocSubviews && noti.object != self) {
+        [self didReceiveMemoryWarning];
+    }
+}
+
+- (void)dealloc
+{
+    NSLog(@"%@ --- dealloc",NSStringFromClass([self class]));
+    [[NSNotificationCenter defaultCenter] removeObserver:self name:DEALLOC_SUBVIEWS object:nil];
 }
 
 /*

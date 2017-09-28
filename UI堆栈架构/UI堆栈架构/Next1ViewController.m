@@ -18,19 +18,33 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    
+    UIImageView *imageV = [[UIImageView alloc] init];
+    imageV.frame = CGRectMake(0, 0, SCREENWIDTH, SCREENHEIGH - 64 - 49);
+    imageV.image = [UIImage getBundleImage:@"屏幕快照.png" isCache:NO];
+    [self.view addSubview:imageV];
+
     UIButton *next = [UIButton buttonWithType:UIButtonTypeCustom];
     next.frame = CGRectMake(0, 0, 100, 100);
     [next setTitle:@"next" forState:UIControlStateNormal];
     [next setBackgroundColor:[UIColor whiteColor]];
     [next setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-    [next addTarget:self action:@selector(nextAction:) forControlEvents:UIControlEventTouchUpInside];
+    [next addTarget:self action:@selector(clearAction:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:next];
+    
+    UIBarButtonItem *rightItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFastForward target:self action:@selector(nextAction:)];
+    self.navigationItem.rightBarButtonItem = rightItem;
 }
 
-- (void)nextAction:(UIButton *)btn
+- (void)nextAction:(id)sender
 {
-    [self.navigationController popViewControllerAnimated:YES];
+    Next1ViewController *next1 = [[Next1ViewController alloc] init];
+    [self.navigationController pushViewController:next1 animated:YES];
+}
+
+- (void)clearAction:(UIButton *)btn
+{
+    [[NSNotificationCenter defaultCenter] postNotificationName:DEALLOC_SUBVIEWS object:self];
+//    [self.navigationController popViewControllerAnimated:YES];
 }
 
 - (void)didReceiveMemoryWarning {

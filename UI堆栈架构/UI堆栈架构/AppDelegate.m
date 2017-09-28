@@ -58,17 +58,13 @@
 
 - (void)tabBarController:(UITabBarController *)tabBarController didSelectViewController:(UIViewController *)viewController
 {
-    for (UIViewController *vc in tabBarController.viewControllers) {
-        if (vc != viewController && vc.view) {
-            [vc didReceiveMemoryWarning];
-        }
-    }
+    [[NSNotificationCenter defaultCenter] postNotificationName:DEALLOC_SUBVIEWS object:viewController];
 }
 - (BOOL)tabBarController:(UITabBarController *)tabBarController shouldSelectViewController:(UIViewController *)viewController
 {
     if (viewController == tabBarController.selectedViewController) {return NO;}
     BaseViewController *vc = (BaseViewController *)viewController;
-    [vc setNavigationItemWithSubviews];
+    [vc setNavigationItemWithSubviewsAnimation:NO];
     return YES;
 }
 

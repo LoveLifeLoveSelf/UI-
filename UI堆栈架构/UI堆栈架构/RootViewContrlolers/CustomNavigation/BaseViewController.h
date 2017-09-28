@@ -10,8 +10,10 @@
 
 @interface BaseViewController : UIViewController
 
+@property(nonatomic) BOOL isDeallocSubviews;//是否需要释放subViews
+
 - (void)setNavigationBarHide:(BOOL)hide withAanimated:(BOOL)animated;
 
-- (void)setNavigationItemWithSubviews;
+- (void)setNavigationItemWithSubviewsAnimation:(BOOL)animation;
 
 @end
