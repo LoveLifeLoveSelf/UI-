@@ -7,6 +7,7 @@
 //
 
 #import "BaseViewController.h"
+#import "NSObject+MemoryStorage.h"
 
 @interface BaseViewController ()
 
