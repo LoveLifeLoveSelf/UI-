@@ -11,6 +11,7 @@
 #import "SecondViewController.h"
 #import "ThreeViewController.h"
 #import "FourViewController.h"
+#import "FiveViewController.h"
 
 @interface AppDelegate ()<UITabBarControllerDelegate>
 
@@ -21,7 +22,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    self.window = [[UIWindow alloc] init];
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     self.window.backgroundColor = [UIColor whiteColor];
     
     UITabBarController *tabBarController = [[UITabBarController alloc] init];
@@ -45,7 +46,11 @@
     item = [[UITabBarItem alloc] initWithTitle:@"Fr" image:[UIImage imageNamed:@"社保相片"] selectedImage:[UIImage imageNamed:@"社保相片"]];
     fourVC.tabBarItem = item;
     
-    [tabBarController setViewControllers:@[firstVC,secondVC,threeVC,fourVC] animated:YES];
+    FiveViewController *fiveVC = [[FiveViewController alloc] init];
+    item = [[UITabBarItem alloc] initWithTitle:@"Fi" image:[UIImage imageNamed:@"社保相片"] selectedImage:[UIImage imageNamed:@"社保相片"]];
+    fiveVC.tabBarItem = item;
+    
+    [tabBarController setViewControllers:@[firstVC,secondVC,threeVC,fourVC,fiveVC] animated:YES];
     
     [tabBarController setSelectedIndex:1];
     

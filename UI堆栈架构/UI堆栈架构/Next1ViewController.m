@@ -19,9 +19,16 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     UIImageView *imageV = [[UIImageView alloc] init];
-    imageV.frame = CGRectMake(0, 0, SCREENWIDTH, SCREENHEIGH - 64 - 49);
-    imageV.image = [UIImage getBundleImage:@"屏幕快照.png" isCache:NO];
+    imageV.frame = CGRectMake(200, 0, 60, 60);
+//    imageV.image = [UIImage getBundleImage:@"屏幕快照.png" isCache:NO];
+    imageV.image = [UIImage imageNamed:@"屏幕快照.png"];
     [self.view addSubview:imageV];
+    
+//    UIImageView *imageV1 = [[UIImageView alloc] init];
+//    imageV1.frame = CGRectMake(200, 70, 60, 60);
+//    //    imageV.image = [UIImage getBundleImage:@"屏幕快照.png" isCache:NO];
+//    imageV1.image = [UIImage imageNamed:@"屏幕快照.png"];
+//    [self.view addSubview:imageV1];
 
     UIButton *next = [UIButton buttonWithType:UIButtonTypeCustom];
     next.frame = CGRectMake(0, 0, 100, 100);

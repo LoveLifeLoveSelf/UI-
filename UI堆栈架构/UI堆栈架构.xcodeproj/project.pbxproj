@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		78DAC7B2A1D0DEB77C38F9EE /* libPods-UI堆栈架构.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 563D1F3AB91E0604923E2E91 /* libPods-UI堆栈架构.a */; };
-		FC1894F51F6D2B8A0093B00E /* 社保相片.png in Resources */ = {isa = PBXBuildFile; fileRef = FC1894F41F6D2B8A0093B00E /* 社保相片.png */; };
 		FC1894F71F6D2B8F0093B00E /* 屏幕快照.png in Resources */ = {isa = PBXBuildFile; fileRef = FC1894F61F6D2B8F0093B00E /* 屏幕快照.png */; };
 		FC1894FA1F6D2C2A0093B00E /* NextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC1894F91F6D2C2A0093B00E /* NextViewController.m */; };
 		FC1894FD1F6E7D950093B00E /* Next1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC1894FC1F6E7D950093B00E /* Next1ViewController.m */; };
@@ -24,6 +23,8 @@
 		FC2E45551F6D204C0057B482 /* ThreeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC2E45541F6D204C0057B482 /* ThreeViewController.m */; };
 		FC2E45581F6D205F0057B482 /* FourViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC2E45571F6D205F0057B482 /* FourViewController.m */; };
 		FCBEC4481F7C9195002F244E /* NSObject+MemoryStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = FCBEC4471F7C9195002F244E /* NSObject+MemoryStorage.m */; };
+		FCBEC46D1F7E42A3002F244E /* FiveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCBEC46C1F7E42A3002F244E /* FiveViewController.m */; };
+		FCBEC46F1F7E4593002F244E /* 社保相片@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FCBEC46E1F7E4593002F244E /* 社保相片@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,7 +49,6 @@
 		94528F067C46F8F362EC30A9 /* Pods-UI堆栈架构.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UI堆栈架构.release.xcconfig"; path = "Pods/Target Support Files/Pods-UI堆栈架构/Pods-UI堆栈架构.release.xcconfig"; sourceTree = "<group>"; };
 		C7182103FF89717823DBADAC /* libPods-UI堆栈架构UITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-UI堆栈架构UITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD23C571EBADA556D0E02721 /* Pods-UI堆栈架构.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UI堆栈架构.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UI堆栈架构/Pods-UI堆栈架构.debug.xcconfig"; sourceTree = "<group>"; };
-		FC1894F41F6D2B8A0093B00E /* 社保相片.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "社保相片.png"; sourceTree = "<group>"; };
 		FC1894F61F6D2B8F0093B00E /* 屏幕快照.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "屏幕快照.png"; sourceTree = "<group>"; };
 		FC1894F81F6D2C2A0093B00E /* NextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NextViewController.h; sourceTree = "<group>"; };
 		FC1894F91F6D2C2A0093B00E /* NextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NextViewController.m; sourceTree = "<group>"; };
@@ -83,6 +83,9 @@
 		FC8F8890032EB3AA22975D80 /* libPods-UI堆栈架构Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-UI堆栈架构Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCBEC4461F7C9195002F244E /* NSObject+MemoryStorage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+MemoryStorage.h"; sourceTree = "<group>"; };
 		FCBEC4471F7C9195002F244E /* NSObject+MemoryStorage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MemoryStorage.m"; sourceTree = "<group>"; };
+		FCBEC46B1F7E42A3002F244E /* FiveViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FiveViewController.h; sourceTree = "<group>"; };
+		FCBEC46C1F7E42A3002F244E /* FiveViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FiveViewController.m; sourceTree = "<group>"; };
+		FCBEC46E1F7E4593002F244E /* 社保相片@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "社保相片@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -238,6 +241,8 @@
 				FC2E45541F6D204C0057B482 /* ThreeViewController.m */,
 				FC2E45561F6D205F0057B482 /* FourViewController.h */,
 				FC2E45571F6D205F0057B482 /* FourViewController.m */,
+				FCBEC46B1F7E42A3002F244E /* FiveViewController.h */,
+				FCBEC46C1F7E42A3002F244E /* FiveViewController.m */,
 			);
 			path = MainControllers;
 			sourceTree = "<group>";
@@ -255,7 +260,7 @@
 			isa = PBXGroup;
 			children = (
 				FC1894F61F6D2B8F0093B00E /* 屏幕快照.png */,
-				FC1894F41F6D2B8A0093B00E /* 社保相片.png */,
+				FCBEC46E1F7E4593002F244E /* 社保相片@2x.png */,
 			);
 			path = ImageResource;
 			sourceTree = "<group>";
@@ -372,7 +377,7 @@
 			files = (
 				FC2E45131F6D1A3D0057B482 /* Assets.xcassets in Resources */,
 				FC1894F71F6D2B8F0093B00E /* 屏幕快照.png in Resources */,
-				FC1894F51F6D2B8A0093B00E /* 社保相片.png in Resources */,
+				FCBEC46F1F7E4593002F244E /* 社保相片@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -448,6 +453,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FCBEC46D1F7E42A3002F244E /* FiveViewController.m in Sources */,
 				FC2E45521F6D203C0057B482 /* SecondViewController.m in Sources */,
 				FC1894FA1F6D2C2A0093B00E /* NextViewController.m in Sources */,
 				FC2E45551F6D204C0057B482 /* ThreeViewController.m in Sources */,

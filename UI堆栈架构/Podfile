@@ -7,4 +7,5 @@ target 'UI堆栈架构' do
   pod 'AFNetworking', '~> 3.0'
   pod 'SDWebImage', '~> 4.0'
   pod 'BundleImageCache','~> 2.0.0'
+  pod 'Masonry', '~> 1.1.0'
 end
