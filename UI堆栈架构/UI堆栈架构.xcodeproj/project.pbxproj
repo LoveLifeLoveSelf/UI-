@@ -330,7 +330,7 @@
 				TargetAttributes = {
 					FC2E45021F6D1A3D0057B482 = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = HBE97FZKWB;
+						DevelopmentTeam = 738WW925UP;
 						ProvisioningStyle = Automatic;
 					};
 					FC2E451B1F6D1A3D0057B482 = {
@@ -589,7 +589,7 @@
 			baseConfigurationReference = CD23C571EBADA556D0E02721 /* Pods-UI堆栈架构.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = HBE97FZKWB;
+				DEVELOPMENT_TEAM = 738WW925UP;
 				GCC_PREFIX_HEADER = "UI堆栈架构/PrefixHeader.pch";
 				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = "UI堆栈架构/Info.plist";
@@ -605,7 +605,7 @@
 			baseConfigurationReference = 94528F067C46F8F362EC30A9 /* Pods-UI堆栈架构.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = HBE97FZKWB;
+				DEVELOPMENT_TEAM = 738WW925UP;
 				GCC_PREFIX_HEADER = "UI堆栈架构/PrefixHeader.pch";
 				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = "UI堆栈架构/Info.plist";

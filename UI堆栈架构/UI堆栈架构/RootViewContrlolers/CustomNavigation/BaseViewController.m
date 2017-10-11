@@ -22,6 +22,7 @@
         NSLog(@"%@ == 初始化vc",NSStringFromClass([super class]));
         self.isDeallocSubviews = YES;
         [self setNavigationItemWithSubviewsAnimation:YES];
+        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(deallocSubViews:) name:DEALLOC_SUBVIEWS object:nil];
     }
     return self;
 }
@@ -37,7 +38,6 @@
     self.view.backgroundColor = [UIColor whiteColor];
     self.edgesForExtendedLayout = UIRectEdgeLeft | UIRectEdgeRight;
 //    self.automaticallyAdjustsScrollViewInsets = NO;
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(deallocSubViews:) name:DEALLOC_SUBVIEWS object:nil];
 }
 
 - (void)setNavigationItemWithSubviewsAnimation:(BOOL)animation
