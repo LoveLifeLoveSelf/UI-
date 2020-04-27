@@ -61,10 +61,10 @@
 		FC2E45121F6D1A3D0057B482 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FC2E45171F6D1A3D0057B482 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FC2E451C1F6D1A3D0057B482 /* UI堆栈架构Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "UI堆栈架构Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		FC2E45201F6D1A3D0057B482 /* UI____Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UI____Tests.m"; sourceTree = "<group>"; };
+		FC2E45201F6D1A3D0057B482 /* UI____Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UI____Tests.m; sourceTree = "<group>"; };
 		FC2E45221F6D1A3D0057B482 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FC2E45271F6D1A3D0057B482 /* UI堆栈架构UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "UI堆栈架构UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		FC2E452B1F6D1A3D0057B482 /* UI____UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UI____UITests.m"; sourceTree = "<group>"; };
+		FC2E452B1F6D1A3D0057B482 /* UI____UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UI____UITests.m; sourceTree = "<group>"; };
 		FC2E452D1F6D1A3D0057B482 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FC2E45411F6D1DFA0057B482 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		FC2E45451F6D1FF00057B482 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
@@ -271,8 +271,6 @@
 				FC2E44FF1F6D1A3D0057B482 /* Sources */,
 				FC2E45001F6D1A3D0057B482 /* Frameworks */,
 				FC2E45011F6D1A3D0057B482 /* Resources */,
-				C027B448F064220D67C9F92F /* [CP] Embed Pods Frameworks */,
-				5646B5C230CCBBECF245C286 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -393,36 +391,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		5646B5C230CCBBECF245C286 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-UI堆栈架构/Pods-UI堆栈架构-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		C027B448F064220D67C9F92F /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-UI堆栈架构/Pods-UI堆栈架构-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		E7CEF45F3A040B08FE1E19EF /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;

@@ -7,7 +7,7 @@
 //
 
 #import "FirstViewController.h"
-#import "UIImageView+WebCache.h"
+//#import <SDWebImage/UIImageView+WebCache.h>
 
 @interface FirstViewController ()
 
@@ -24,7 +24,7 @@
     imageV.frame = CGRectMake(0, 0, SCREENWIDTH, SCREENHEIGH - 64 - 49);
     //imageV.image = [UIImage getBundleImage:@"屏幕快照.png" isCache:NO];
     //[imageV sd_setImageWithURL:[NSURL URLWithString:@"http://pic.58pic.com/58pic/17/76/27/01u58PIC3ra_1024.jpg"] placeholderImage:[UIImage getBundleImage:@"屏幕快照.png" isCache:NO]];
-    [imageV sd_setImageWithURL:[NSURL URLWithString:@"http://pic.58pic.com/58pic/17/76/27/01u58PIC3ra_1024.jpg"] placeholderImage:[UIImage getBundleImage:@"屏幕快照.png" isCache:NO] options:SDWebImageRetryFailed];
+//    [imageV sd_setImageWithURL:[NSURL URLWithString:@"http://pic.58pic.com/58pic/17/76/27/01u58PIC3ra_1024.jpg"] placeholderImage:[UIImage getBundleImage:@"屏幕快照.png" isCache:NO] options:SDWebImageRetryFailed];
     [self.view addSubview:imageV];
 }
 
