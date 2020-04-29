@@ -62,15 +62,5 @@ fastlane/test_output
 # After new code Injection tools there's a generated folder /iOSInjectionProject
 # https://github.com/johnno1962/injectionforxcode
 
-iOSInjectionProject/
-
-zhaopin/zhaopin/Images.xcassets/.TemporaryItems
-zhaopin/zhaopin/Images.xcassets/.apdisk
-zhaopin/zhaopin/Images/.afpDeleted4306241
-zhaopin/zhaopin/Images/.apdisk
-zhaopin/zhaopin/Images/修改的界面1-9
-Breakpoints_v2.*
-
 #cocoopods
-Pods/
-zhaopin/Lib/ZPMResume/Example/Pods/*
+Pods
