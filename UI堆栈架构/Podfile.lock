@@ -14,28 +14,28 @@ PODS:
   - AFNetworking/Serialization (3.1.0)
   - AFNetworking/UIKit (3.1.0):
     - AFNetworking/NSURLSession
-  - BundleImageCache (2.0.6)
+  - BundleImageCache (2.0.7)
   - SDWebImage (4.1.0):
     - SDWebImage/Core (= 4.1.0)
   - SDWebImage/Core (4.1.0)
 
 DEPENDENCIES:
   - AFNetworking (~> 3.0)
-  - BundleImageCache (~> 2.0.6)
+  - BundleImageCache (~> 2.0.7)
   - SDWebImage (~> 4.0)
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
     - AFNetworking
     - SDWebImage
-  https://github.com/LoveLifeLoveSelf/xlspec.git:
+  https://github.com/LoveLifeLoveSelf/xlSpec-binary.git:
     - BundleImageCache
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
-  BundleImageCache: aaca648a811263c1407bad606946b8126ff954ab
+  BundleImageCache: 188dfda8c1fecc10ac598b425830694f9fe11222
   SDWebImage: 0e435c14e402a6730315a0fb79f95e68654d55a4
 
-PODFILE CHECKSUM: 08f55bec0345dfaeb24f56dd04ecad18a2408da1
+PODFILE CHECKSUM: 410b5c7663ad23bfbd29c5536cafff6259ba3462
 
 COCOAPODS: 1.8.3
